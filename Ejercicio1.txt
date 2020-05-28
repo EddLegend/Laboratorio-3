@@ -1,0 +1,24 @@
+#include <conio.h>
+#include <stdio.h>
+
+main ()
+
+{
+    float n1, n2, n3, cal;
+
+    printf("Introduzca la primera nota: ");
+    scanf("%f", &n1);
+
+    printf("Introduzca la segunda nota: ");
+    scanf("%f", &n2);
+
+    printf("Introduzca la tercera nota: ");
+    scanf("%f", &n3);
+
+    cal=(n1+n2+n3)/3;
+
+    printf("\nLa calificacion es: %f",cal);
+
+    getch();
+
+}

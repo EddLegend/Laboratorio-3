@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+
+int main()
+{
+    float r, p, a, PI=3.14;
+	
+    printf( "Introduzca radio: " );
+    scanf("%f", &r);
+    
+    a = pow(r,2)*PI;
+    p = 2*PI*r;
+
+    printf( "\nEl perimetro es: %f\n", p);
+    printf( "El area es: %f\n", a);
+
+    return 0;
+}

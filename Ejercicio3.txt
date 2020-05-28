@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <cmath>
+
+int main (int argc, char *argv[])
+{
+    float a, b, c, x1, x2, xi, xr, disc;
+
+    printf("Intruduzca el coeficiente a: ");
+    scanf("%f", &a);
+    printf("Intruduzca el coeficiente b: ");
+    scanf("%f", &b);
+    printf("Intruduzca el coeficiente c: ");
+    scanf("%f", &c);
+
+    disc=pow(b,2.0)-4*a*c;
+
+    if(disc>0.0)
+    {
+        printf ("Las dos raices son reales");
+        x1 = ((-b+sqrt(disc))/(2*a));
+        x2 = ((-b-sqrt(disc))/(2*a));
+        printf ("\nx1=%.2f  x2=%.2f", x1, x2);
+    }
+        else
+        {
+            if (disc==0.0)
+            {
+                x1=(-b)/(2.0*a);
+                printf ("\n La ecuacion solo tiene una raiz %.2f", x1);
+            }
+                else
+                {
+                    xr=(-b/(2.0*a));
+                       xi=(sqrt(-disc)/(2.0*a));
+                    printf ("\nLa raiz real es %.2f y la imaginaria es %.2f", xr,xi);
+                }
+        }
+                        
+    printf("\n\n");
+
+}

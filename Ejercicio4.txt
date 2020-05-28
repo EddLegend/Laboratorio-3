@@ -1,0 +1,22 @@
+#include <conio.h>
+#include <stdio.h>
+
+main ()
+{
+    float precio, cantidad, x;
+    char nombre[50];
+
+    printf("Escriba el nombre del producto ");
+    scanf("%s", &nombre);
+    printf("Ingrese el precio del producto ");
+    scanf("%f", &precio);
+    printf("Brinde la cantidad comprada ");
+    scanf("%f", &cantidad);
+
+    x=precio*cantidad;
+
+    printf("\nEl dinero gastado en %s", nombre);
+    printf("\nes por la cantidad de $%f:", x);
+
+    getch();
+}
